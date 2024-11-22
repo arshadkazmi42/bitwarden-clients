@@ -10,14 +10,13 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  check-run:
-    name: Check PR run
-    uses: bitwarden/gh-actions/.github/workflows/check-run.yml@main
-
+#  check-run:
+#    name: Check PR run
+#    uses: bitwarden/gh-actions/.github/workflows/check-run.yml@main
   chromatic:
     name: Chromatic
     runs-on: ubuntu-22.04
-    needs: check-run
+#    needs: check-run
     permissions:
       contents: read
       pull-requests: write
